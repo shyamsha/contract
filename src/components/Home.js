@@ -21,7 +21,7 @@ const Home = () => {
   //       console.log(err, "-->error");
   //     });
   // }, []);
-  const { data: product, error, isLoading } = useGetProductQuery(4);
+  const { data: product, error, isLoading } = useGetProductQuery(8);
 
   const [user, { data, isLoading: loginLoading }] = useLoginMutation();
   const [updateProduct, { data: update }] = useUpdateMutation();
@@ -37,7 +37,7 @@ const Home = () => {
       title: "new title",
       price: 100,
     };
-    updateProduct({ updateProduct: Data, id: 1 });
+    updateProduct({ updateProduct: Data, id: 8 });
   };
   console.log(update, "-->data");
   if (isLoading) return <div>Loading...</div>;

@@ -1,10 +1,10 @@
 import * as React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { selectorFunction, setCountVal } from "../store/reducerFunctions";
+import { counter, setCountVal } from "../store/reducerFunctions";
 
 const Counter = () => {
   const dispatch = useDispatch();
-  const { countVal } = useSelector(selectorFunction);
+  const { countVal } = useSelector(counter);
   const handleAdd = () => {
     dispatch(setCountVal(countVal + 1));
   };

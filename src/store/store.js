@@ -1,6 +1,6 @@
 // store.js
 import { configureStore } from "@reduxjs/toolkit";
-import reducerFunctions from "./reducerFunctions";
+import reducerFunctions from "./counterReducer";
 import { apiSlice } from "../lib/services/api";
 import { setupListeners } from "@reduxjs/toolkit/query/react";
 // const persistedState = localStorage.getItem("reduxState")

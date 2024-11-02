@@ -5,7 +5,7 @@ export const initialState = {
   countVal: 16,
 };
 
-const reducerFunctions = createSlice({
+const counterReducer = createSlice({
   name: "counter",
   initialState: initialState,
   reducers: {
@@ -15,7 +15,7 @@ const reducerFunctions = createSlice({
   },
 });
 
-export const { setCountVal } = reducerFunctions.actions;
+export const { setCountVal } = counterReducer.actions;
 export const counter = (state) => state.counter;
 
-export default reducerFunctions.reducer;
+export default counterReducer.reducer;

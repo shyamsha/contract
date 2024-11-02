@@ -5,7 +5,7 @@ import {
   useUpdateMutation,
 } from "src/lib/services/api";
 import { useSelector } from "react-redux";
-import { counter } from "../store/reducerFunctions";
+import { counter } from "../store/counterReducer";
 // import { useLocation } from "react-router-dom";
 const Home = () => {
   const { countVal } = useSelector(counter);
